@@ -21,4 +21,5 @@ COPY --from=build /app/target/movie-api-1.0.0.jar app.jar
 EXPOSE 8000
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Use shell form to allow environment variable substitution
+CMD java -Dserver.port=${PORT:-8000} -jar app.jar
