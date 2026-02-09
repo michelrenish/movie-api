@@ -283,8 +283,6 @@ This application is ready to deploy to **Render.com** with their **completely fr
 
 **Note**: Free tier apps sleep after 15 minutes of inactivity. First request after sleep takes ~30 seconds to wake up.
 
-For detailed deployment instructions, see **[DEPLOYMENT.md](DEPLOYMENT.md)**
-
 ### Deployment Configuration
 
 The following files are included for Render deployment:
