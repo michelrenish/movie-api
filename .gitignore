@@ -1,3 +1,5 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # Ignore Maven build artifacts
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -19,3 +21,6 @@ Thumbs.db
 
 # Ignore application-local.properties (if you create one)
 application-local.properties
+
+# Docker
+.dockerignore

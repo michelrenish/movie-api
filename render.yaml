@@ -1,14 +1,7 @@
 services:
   - type: web
     name: movie-api
-    env: java
-    buildCommand: mvn clean install -DskipTests
-    startCommand: java -jar target/movie-api-1.0.0.jar
+    env: docker
     plan: free
     autoDeploy: true
-    envVars:
-      - key: JAVA_VERSION
-        value: 17
-      - key: MAVEN_VERSION
-        value: 3.8.6
     healthCheckPath: /actuator/health
